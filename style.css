@@ -1,3 +1,65 @@
+/* menú Dropdown */
+.menuSticky{
+            overflow: hidden;
+            top: 0;
+            position: sticky;
+            height: 200px;
+            margin-bottom: -150px;
+        }
+        ul {
+            list-style-type: none;
+            overflow: hidden;
+            background-color: #1a0950;
+        }
+ 
+        li {
+            float: left;
+        }
+ 
+        .opcion {
+            display: inline-block;
+            color: rgb(255, 250, 194);
+            text-align: center;
+            padding: 14px;
+            text-decoration: none;
+        }
+ 
+        .dropbtn {
+            display: inline-block;
+            color: rgb(255, 250, 194);
+            text-align: center;
+            padding: 14px;
+            text-decoration: none;
+        }
+ 
+        .dropdown {
+            display: inline-block;
+        }
+ 
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #9e6affb5;
+            width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+ 
+        a {
+            color: #cdbdff;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+ 
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+
+
+
 /* Animaciones individuales */
   header{
            font-family:Verdana, sans-serif;
@@ -196,5 +258,114 @@ table{
       left: 1450px;
       z-index: 1;
     }
+
+ /* CARRUSEL */
+
+#slideshow {
+        text-align: center;
+        overflow: hidden;
+        height: 510px;
+        width: 728px;
+        margin-bottom: 400px;
+      }
+      
+      .slide-wrapper {
+        width: 3640px;
+        animation: slide 25s infinite ease-in-out;
+      }
+      
+      
+      .imgUno {
+        background-image: url(img/michaeljackson.jpg);
+        /*Agregar background-image: url(); para añadir imágenes*/
+        object-fit: cover;
+        background-position: top;
+        float: left;
+        height: 510px;
+        width: 728px;
+        font-family:'Franklin Gothic Medium';
+      }
+      
+      .imgDos {
+        background-image: url(img/blondie.jpg);
+        object-fit: cover;
+        background-position: center;
+        float: left;
+        height: 510px;
+        width: 728px;
+        font-family:'Franklin Gothic Medium';
+        color: darkred;
+
+
+      }
+      
+      .imgTres {
+        background-image: url(img/fleetwoodmac4.jpg);
+        object-fit: cover;
+        background-position: center;
+        float: left;
+        height: 510px;
+        width: 728px;
+        font-family:'Franklin Gothic Medium';
+
+      }
+      
+      .imgCuatro {
+        background-image: url(img/arcticmonkeys4.jpg);
+        object-fit: cover;
+        background-position: center;
+        float: left;
+        height: 510px;
+        width: 728px;
+        font-family:'Franklin Gothic Medium';
+        color: black;
+
+      }
+
+      .imgCinco {
+        background-image: url(img/Megan.jpg);
+        object-fit: cover;
+        background-position: top;
+        float: left;
+        height: 510px;
+        width: 728px;
+        font-family:'Franklin Gothic Medium';
+
+
+      }
+
+
+      @keyframes slide {
+      /* Imagen 1 (0px) */
+  0%, 15% { margin-left: 0; }
+  
+  /* Transición 1 a 2 */
+  
+  /* Imagen 2 (-728px) */
+  20%, 35% { margin-left: -728px; }
+  
+  /* Transición 2 a 3 */
+  
+  /* Imagen 3 (-1456px) */
+  40%, 55% { margin-left: -1456px; }
+  
+  /* Transición 3 a 4 */
+  
+  /* Imagen 4 (-2184px) */
+  60%, 75% { margin-left: -2184px; }
+  
+  /* Transición 4 a 5 */
+  
+  /* Imagen 5 (-2912px) - CÁLCULO: -2184 - 728 */
+  80%, 95% { margin-left: -2912px; }
+  
+  /* Transición final para volver al inicio suavemente */
+  100% { margin-left: 0; }
+}
+
+
+
+
+
 
     
